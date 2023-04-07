@@ -1,0 +1,507 @@
+/* =======================              Main Page Styling Section                 ================================ */
+
+html {
+  flex: 1;
+}
+
+body {
+  overflow: hidden; 
+  /* Hide scrollbars */
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* upperdiv containing first 2 gifs */
+
+.upperDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding: 2rem 4rem;
+  width: 99%;
+}
+
+/* 1st gif */
+
+.Imgif1 {
+  text-align: center;
+  z-index: 2;
+  flex: 1;
+}
+
+/* 2nd gif */
+
+.Imgif2 {
+  text-align: center;
+  flex: 1;
+  z-index: 2;
+}
+
+/* Lower div containing bottom  gifs */
+
+.lowerDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding: 2rem 4rem;
+  position: absolute;
+  bottom: 10px;
+  width: 99%;
+}
+
+/* 3rd gif */
+
+.Imgif3 {
+  text-align: center;
+  z-index: 2;
+  flex: 1;
+}
+
+/* 4th gif */
+
+.Imgif4 {
+  text-align: center;
+  flex: 1;
+  z-index: 2;
+  /* padding-left: 920px; */
+}
+
+/* Common to all gifs */
+
+.gif1 {
+  height: 200px;
+  width: 260px;
+  border-radius: 50%;
+}
+
+.tooltip {
+  /* position: relative !important;
+  display: inline-block; */
+  flex: 1;
+  opacity: 1 !important;
+}
+
+.tooltip .toolTipText {
+  visibility: hidden;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-weight: bold;
+  color: black;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.tooltip:hover .toolTipText {
+  visibility: visible;
+}
+
+/* Main image in the background */
+
+.main {
+  z-index: 1;
+  position: absolute;
+  bottom: 2px;
+}
+
+.image {
+  height: 655px;
+  margin: -8px;
+  margin-bottom: 2px;
+}
+
+.carImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+.about {
+  z-index: 1;
+  position: absolute;
+  flex-direction: column;
+} */
+
+/* =======================              Prediction Page Styling Section                 ================================ */
+
+
+input[type=text],
+  select {
+    width: 80%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bolder;
+  }
+
+  input[type=submit] {
+    width: 80%;
+    background-color: #673ab7;
+    color: #3aff22;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 100;
+    font-weight: initial;
+  }
+
+
+  input[type=submit]:hover {
+    background-color: #ff0076e3;
+  }
+
+  form {
+    border-radius: 10px;
+    margin-top: 5%;
+    font-weight: bolder;
+    -webkit-text-stroke-width: thin;
+    width: 450px;
+  }
+
+  /* div {
+
+    border-radius: 5px;
+    margin-left: 35%;
+    width: 30%;
+
+  } */
+
+  h1 {
+    color: rgb(10 102 196 / 88%);
+    font-size: 40px;
+    font-weight: revert;
+    margin-left: 50px;
+  }
+
+  h2 {
+    color: darkmagenta;
+    /* font-size: 20px; */
+    margin-left: 60px;
+  }
+
+  body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0px;
+  }
+
+
+/* =======================              Contact Us Page Styling Section                 ================================ */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+}
+
+#browser {
+  /* margin: 10px auto; */
+  color: white;
+  /* width: 80%; */
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#browser-bar {
+  background: #394141;
+  width: 100%;
+  padding: 8px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 0.9em;
+  position: relative;
+}
+#browser-bar p {
+  text-align: center;
+}
+#browser-bar .circles {
+  border-radius: 10px;
+  height: 13px;
+  width: 13px;
+  background: #ff3434;
+  float: left;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+#browser-bar .circles:nth-of-type(2) {
+  background: #ffdd33;
+}
+#browser-bar .circles:nth-of-type(3) {
+  background: #67b678;
+}
+
+.arrow {
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  font-size: 1.2em;
+  color: #8e9699;
+}
+
+#content {
+  display: flex;
+  flex: 1;
+  background: #454f4f;
+}
+#content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#content #left,
+#content #right {
+  height: 100%;
+}
+#content #left {
+  float: left;
+  flex: 2;
+  background: #7bc087;
+}
+#map-canvas {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+#content #left ul#location-bar {
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+#content #left ul#location-bar li {
+  display: table-cell;
+  padding: 15px;
+  background: #5fa269;
+  border-right: solid thin #7fb587;
+}
+#content #left ul#location-bar li:last-of-type {
+  border-right: 0;
+}
+#content #left ul#location-bar li:hover {
+  background: #4c8254;
+}
+#content #left ul#location-bar .active {
+  background: #4c8254;
+}
+#content #right {
+  float: left;
+  flex: 1;
+  background: #454f4f;
+  font-size: 0.75em;
+  padding: 4vh;
+  text-align: center;
+}
+#content #right p {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#content #right a:hover {
+  color: #51b2d6;
+}
+#content #right #social {
+  display: flex;
+  margin: 4vh;
+  justify-content: space-around;
+}
+#content #right .social {
+  display: table-cell;
+  text-align: center;
+}
+#content #right form {
+  border-top: solid thin #8e9699;
+  border-bottom: solid thin #8e9699;
+}
+#content #right form input,
+#content #right form textarea {
+  background: #394141;
+  padding: 8px;
+  margin-bottom: 8px;
+  height: 10vh;
+  width: 100%;
+  color: white;
+}
+#content #right form input:last-of-type,
+#content #right form textarea:last-of-type {
+  margin-bottom: 0;
+}
+#content #right form input[type="submit"],
+#content #right form textarea[type="submit"] {
+  text-transform: uppercase;
+  background: #7bc087;
+  width: 50%;
+  color: white;
+  margin: 2vh;
+}
+#content #right form input[type="submit"]:hover,
+#content #right form textarea[type="submit"]:hover {
+  background: #58b068;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#content #right form input[type="textarea"],
+#content #right form textarea[type="textarea"] {
+  min-height: 75px;
+  vertical-align: text-top;
+}
+#content #right p.other {
+  font-size: 0.7;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+  font-weight: 100;
+}
+#content #right p.other,
+#content #right p.other a {
+  color: #8e9699;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  /* line-height: 3; */
+}
+
+.submit-form {
+  font-size: 1.5rem;
+}
+
+/* Social Icons on Contact Us Page */
+
+.fa {
+  padding: 10px;
+  font-size: 25px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-envelope {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.contactUs {
+  background-color: #7eb6ff;
+}
+
+.iconLine {
+  position: relative;
+}
+
+/* .address {
+
+} */
+
+.mailDiv {
+  margin-top: 8rem;
+}
+
+.mailBox {
+  height: 30rem;
+  width: 30rem;
+  margin-right: 20rem;
+}
+
+/* ================================================================================= */
+
+/* Responsive section starts */
+
+/* Main Screen */
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .carImage {
+    width: 100%;
+  }
+
+  /* .image{
+      height: 110rem !important;
+  } */
+
+  .gif1 {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .carImage {
+    width: 101%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+  .carImage {
+    width: 102%;
+  }
+}
+
+@media screen and (min-width: 1370px) and (max-width: 1440px) {
+  .carImage {
+    width: 124%;
+  }
+}
+
+/* Contact Us Section */
+
+@media all and (min-width: 1020px) {
+  .contact-form {
+    /* transform: translateY(10%); */
+  }
+}
+
+@media all and (max-width: 780px) {
+  #content #right {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 780px) {
+  #content #left {
+    width: 100%;
+  }
+}
