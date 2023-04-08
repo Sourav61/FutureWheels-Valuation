@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function PageNotFound() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    console.log("HHH2")
+    
+    // navigate("/predict");
+  }
+
+  
   return (
     <div
       style={{

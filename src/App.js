@@ -9,16 +9,15 @@ import PageNotFound from "./containers/PageNotFound";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ display: "flex", flex: 1 }}>
       <Router>
         <Routes>
-        <Route exact path="/predict" element={<Prediction />} />
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          
+          <Route exact path="/predict" element={<Prediction />} />
           <Route path="/feedback" element={<Feedback />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="/prediction" element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>

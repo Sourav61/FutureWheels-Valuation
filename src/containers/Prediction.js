@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css"
 
@@ -7,16 +7,29 @@ const Prediction = () => {
   const handleClick = () => {
     console.log("HHH")
     
-    navigate("/predict");
+    navigate("/prediction");
   }
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+      fetch("/prediction")
+        .then((res) => res.json())
+        .then((data) => {
+          setData(data);
+          console.log("data", data);
+        })
+    },[]);
+
+
   return (
   <div style={{ overflow: "visible"}}>
     <img src="https://raw.githubusercontent.com/Sourav61/Car-Price-Prediction/main/static/original.png" alt="car-image" style={{ height:"100%", width :"100%", position: "relative" }}/>
     
 
   <div style={{ top: "0px", display: "flex", width: "100%", position: "absolute", justifyContent: "center" }}>
-    <h1 class="text-center" style={{ position : "absolute" }}>Car Price Prediction</h1>
-    <form action={handleClick} method="post" style={{backgroundColor:"#4cafaf"}}>
+    <h1 className="text-center" style={{ position : "absolute" }}>Car Price Prediction</h1>
+    <form action={"./prediction"} method="post" style={{backgroundColor:"#4cafaf",padding: "2vh"}}>
 
       <label htmlFor="Year">Year of Purchase</label><br />
       <input type="text" id="Year" name="Year" placeholder="Enter year of manufacture" required="required" /><br />
@@ -49,7 +62,10 @@ const Prediction = () => {
         <option value="automatic car">automatic car</option>
       </select> <br />
 
-      <input type="submit" value="Calculate Selling Price" />
+      <button type="submit">
+        Calculate Selling Price
+      </button>
+
     </form>
   </div>
 

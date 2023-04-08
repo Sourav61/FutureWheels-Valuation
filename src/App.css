@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  overflow: hidden; 
+  overflow: hidden;
   /* Hide scrollbars */
 }
 
@@ -129,45 +129,48 @@ body {
 
 /* =======================              Prediction Page Styling Section                 ================================ */
 
+input[type="text"],
+select {
+  width: 80%;
+  padding: 0.8vh 2vh;
+  margin: 1.2vh 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
 
-input[type=text],
-  select {
-    width: 80%;
-    padding: 6px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-weight: bolder;
-  }
+input,
+input::placeholder {
+  font: 1rem sans-serif;
+}
 
-  input[type=submit] {
-    width: 80%;
-    background-color: #673ab7;
-    color: #3aff22;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 100;
-    font-weight: initial;
-  }
+button[type="submit"] {
+  width: 80%;
+  background-color: #673ab7;
+  color: #3aff22;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 100;
+  font-weight: initial;
+}
 
+button[type="submit"]:hover {
+  background-color: #ff0076e3;
+}
 
-  input[type=submit]:hover {
-    background-color: #ff0076e3;
-  }
+form {
+  border-radius: 10px;
+  margin-top: 5%;
+  font-weight: bolder;
+  -webkit-text-stroke-width: thin;
+  width: 450px;
+}
 
-  form {
-    border-radius: 10px;
-    margin-top: 5%;
-    font-weight: bolder;
-    -webkit-text-stroke-width: thin;
-    width: 450px;
-  }
-
-  /* div {
+/* div {
 
     border-radius: 5px;
     margin-left: 35%;
@@ -175,27 +178,25 @@ input[type=text],
 
   } */
 
-  h1 {
-    color: rgb(10 102 196 / 88%);
-    font-size: 40px;
-    font-weight: revert;
-    margin-left: 50px;
-  }
+h1 {
+  color: rgb(10 102 196 / 88%);
+  font-size: 40px;
+  font-weight: revert;
+  margin-left: 50px;
+}
 
-  h2 {
-    color: darkmagenta;
-    /* font-size: 20px; */
-    margin-left: 60px;
-  }
+h2 {
+  color: darkmagenta;
+  /* font-size: 20px; */
+  margin-left: 60px;
+}
 
-  body {
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 0px;
-  }
-
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 0px;
+}
 
 /* =======================              Contact Us Page Styling Section                 ================================ */
 
@@ -221,6 +222,7 @@ a {
   /* margin: 10px auto; */
   color: white;
   /* width: 80%; */
+  flex: 1;
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
@@ -381,7 +383,7 @@ a {
 
 input,
 input::-webkit-input-placeholder {
-  font-size: 1.5rem;
+  font-size: 1rem;
   /* line-height: 3; */
 }
 

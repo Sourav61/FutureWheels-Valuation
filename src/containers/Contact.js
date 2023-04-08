@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 const Contact = () => {
   return (
-    <div>
+    <div style={{ flex: 1, display: "flex" }}>
       <div id="browser">
         <div id="browser-bar">
           <div className="circles"></div>
